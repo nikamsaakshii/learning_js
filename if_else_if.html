@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var per= prompt("Enter your percentage");
+        per =parsenInt(per);
+        if(per>=80 && per<=100){
+            document.write("Distingtion");
+        }
+        else if(per>=45 && per<60){
+            document.write("first Division");
+        }
+        else if(per>=33 && per<45){
+            document.write("second Division");
+        }
+        else{
+            document.write("fail");
+        }
+    </script>
+     <script>
+        var age= prompt("Enter your age");
+        age =parsenInt(age);
+        if(age>=18 && age<=100){
+            document.write("you are eligible for vote");
+        }
+        else{
+            document.write("you are not eligible for vote");
+        }
+    </script>
+    <script>
+        var month= prompt("Enter month number");
+        month =parsenInt(month);
+        if(month==4 || month==6 || month==9 || month==11){
+            document.write("30 days");
+        }
+        else if(month==2){
+            document.write("28/29 days");
+        }
+        else{
+            document.write("31 days");
+        }
+    </script>
+
+     
+     
+</body>
+</html>
