@@ -7,19 +7,18 @@
 </head>
 <body>
     <script>
-        var per= prompt("Enter your percentage");
-        per =parsenInt(per);
-        if(per>=80 && per<=100){
-            document.write("Distingtion");
+      var per = 34;
+        if(per>=80 && per<100){
+            document.write("distinction");
         }
-        else if(per>=45 && per<60){
-            document.write("first Division");
+        else if(per>=60 && per<79){
+            document.write("first class");
         }
-        else if(per>=33 && per<45){
-            document.write("second Division");
+        else if(per>=40 && per<=59){
+            document.write("second class");
         }
         else{
-            document.write("fail");
+            document.write("you are failed");
         }
     </script>
      <script>

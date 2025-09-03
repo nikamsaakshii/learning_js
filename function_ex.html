@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-6">
+
+
+
+    <form name="myform" style="text-center: center; margin-top:50px; padding: 30px;">
+    <div class="mb-3">
+        <h1>Simple Calculator</h1>
+
+</div>
+    <div class="mb-3">
+        <label for="n1" class="form-label">Enter First Number</label>
+        <input type="text" class="form-control" id="n1" name="n1" placeholder="Enter First Number">
+    </div>
+    <div class="mb-3">
+        <label for="n2" class="form-label">Enter Second Number</label>
+        <input type="text" class="form-control" id="n2" name="n2" placeholder="Enter Second Number">
+    </div>
+    <input type="button" class="btn btn-primary" value="Add" onclick="add()">
+    <input type="button" class="btn btn-primary" value="Sub" onclick="sub()">
+    <input type="button" class="btn btn-primary" value="Mul" onclick="mul()">
+    <input type="button" class="btn btn-primary" value="Div" onclick="div()">
+
+    <div class="mb-3">
+        <label for="result" class="form-label">Result</label>
+        <input type="text" class="form-control" id="result" name="result" placeholder="Result">
+    </div>
+    </form> 
+          
+
+<script>
+
+    function add(){
+        var n1 = parseInt(document.myform.n1.value);
+        var n2 = parseInt(document.myform.n2.value);
+        var result = n1 + n2;
+        document.myform.result.value = sum.tofixed(2);
+    }
+    function sub(){
+        var n1 = parseInt(document.myform.n1.value);
+        var n2 = parseInt(document.myform.n2.value);
+        var sub = n1 - n2;
+        document.myform.result.value = sub.tofixed(2);
+    }
+    function mul(){
+        var n1 = parseInt(document.myform.n1.value);
+        var n2 = parseInt(document.myform.n2.value);
+        var mul = n1 * n2;
+        document.myform.result.value = mul.toFixed(2);
+    }
+    function div(){
+        var n1 = parseInt(document.myform.n1.value);
+        var n2 = parseInt(document.myform.n2.value);
+        var div = n1 / n2;
+        document.myform.result.value = div.toFixed(2);
+    }
+
+</script>
+    
+</body>
+</html>

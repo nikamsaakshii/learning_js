@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = ["Sakshi ", "10", "true", "Pooja"];
+        document.write(a + "<br>");
+    </script>
+
+    <script>
+        var array = [10, 20, 30, 40, 50, 60];
+
+        // for loop---------------------------
+
+        var sumof = 0;
+        document.write("<h2>Using for loop </h2> <ul>");
+        for (var i = 0; i < array.length; i++) {
+            document.write("<li>" + array[i] + "</li>");
+            sumof = sumof + array[i];
+        }
+        document.write("</ul>");
+        document.write("total sum using for loop: " + sumof + "<br>");
+
+        // while loop---------------------------
+        var sumof1 = 0;
+        var j = 0;
+        document.write("<h2>Using while loop </h2> <ul>");
+
+        while (j < array.length) {
+            document.write("<li>" + array[j] + "</li>");
+            sumof1 = sumof1 + array[j];
+            j++;
+        }
+        document.write("</ul>");
+        document.write("total sum using while loop: " + sumof1 + "<br>");
+
+        // do while loop---------------------------
+        var sumof2 = 0;
+        var k = 0;
+        document.write("<h2>Using while loop </h2> <ul>");
+            do{
+                document.write("sumof2 " + sumof2 + "<br>");
+                document.write("<li>" + array[k] + "</li>");
+            }
+            while (k < array.length) {
+                sumof2 = sumof2 + array[k];
+                k++;
+            }
+            document.write("</ul>");
+            document.write("total sum using do while loop: " + sumof2 + "<br>");
+
+
+    </script>
+
+
+</body>
+
+</html>
