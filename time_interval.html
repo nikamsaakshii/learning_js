@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interval example</title>
+</head>
+<body>
+    <h1 id="clock"></h1>
+    <script>
+        function showtime(){
+            let now =new Date();
+            let time = now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML = time;
+            document.getmonth("clock").style.color="blue";
+
+
+        }
+        setInterval(showtime,1000);
+    </script>
+
+    <h1 id="counter"></h1>
+    <button onclick="stopcount()">stop</button>
+
+    <script>
+        let count=0;
+        let counter =setInterval (function(){
+            count++;
+            document.getElementById("counter").innerHTML = count;
+
+        },1000);
+        function stopcount(){
+            clearInterval(counter);
+        }
+      
+    </script>
+
+    <h1 id="msg"> hello  welcome to pune</h1>
+    <script>
+        setTimeout(function(){
+
+            document.getElementById("msg").innerHTML = "please attend the meeting";
+        },5000);
+        
+            
+        
+
+    </script>
+
+
+    
+</body>
+</html>

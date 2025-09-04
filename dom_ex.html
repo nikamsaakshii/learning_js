@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom examples</title>
+</head>
+
+<body>
+    <h1 class="heading"> Hi i am sakshi</h1>
+    <button onclick="changeText()">click me</button>
+
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerHTML = "i am pooja";
+
+        }
+
+    </script>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officia officiis iure dolorem est,
+        asperiores labore dignissimos hic saepe, corrupti ullam animi facere inventore quibusdam cum. Nostrum delectus
+        veniam natus?</p>
+    <button onclick="markRed()">click me</button>
+
+
+    <script>
+        function markRed() {
+            document.getElementById("para").style.color = "red";
+            document.getElementById("para").style.fontSize = "30px";
+              document.getElementById("para").style.backgroundColor = "blue";
+
+
+        }
+    </script>
+    </script>
+
+</body>
+
+</html>
